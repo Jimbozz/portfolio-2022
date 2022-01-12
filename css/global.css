@@ -1,0 +1,147 @@
+
+
+.light {
+  --text-main: #2D2F2B;
+  --main-bg: #F9F9F9;
+  --shadow: #2D2F2B;
+  --font-mono: "roboto mono";
+  --accent-color: #48A274;
+}
+
+/* .dark {
+  --text-heading: "roboto";
+  --text-paragraph: "roboto";
+  --color-text: #2D2F2B;
+  --color-grey: #f3f3f3;
+} */
+
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+html {
+  font-size: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 0px 0px 0.5rem;
+}
+
+
+.page {
+  font-family: "roboto",sans-serif, Verdana, Geneva, Tahoma;
+	font-size: calc(15px + 0.3vw);
+	line-height: 1.6;
+  background-color: var(--main-bg);
+	margin: 0;
+	padding: 0;
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+html, body {
+  height: 100vh;
+  
+}
+
+main {
+  flex-grow: 1;
+}
+/*header*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 17vh;
+  padding: 32px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Footer*/
+
+footer {
+  height: 8vh;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*project specific layout*/
+
+.hero-wrapper {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-logo {
+  height: 6rem;
+  width: auto;
+}
+
+.hero-logo img {
+  width: auto;
+  height: 100%;
+}
+
+.makers {
+  background-color: #F2ECDE;
+}
+
+.cosmo {
+  background-color: #60e6b2;
+}
+
+.rainy {
+  background-color: #F6F6F6;
+}
+
+.project-heading {
+  text-align: center;
+}
+
+.project-link {
+  margin: 0px 1rem;
+  text-decoration: underline;
+}
+
+.explanation {
+  display: flex;
+  margin: 6rem 2rem;
+  gap: 2rem;
+}
+
+.explanation div {
+  flex: 1;
+}
+
+.explanation p {
+  height: 16rem;
+}
+
+
+

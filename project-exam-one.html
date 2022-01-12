@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/global.css">
+  <title>James | Project Exam One</title>
+</head>
+<body class="page-wrapper">
+  <header>
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/assets/Artboard 2 copy 6.png" alt="">
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="hero-wrapper makers">
+      <div class="hero-logo">
+        <img src="/assets/makers-logo@2x.png" alt="Makers logo">
+      </div>
+    </div>
+    <section>
+      <div class="project-heading">
+        <h1>Project Exam One</h1>
+        <a class="project-link" href="https://github.com/Jimbozz/makers-portfolio">Link to Github</a>
+        <a class="project-link" href="https://makers-v2.netlify.app/">Link to Website</a>
+      </div>
+      <div class="explanation">
+        <div>
+          <h3>What Was Changed</h3>
+          <p>Added a comments section to blog articles.</p>
+          <hr>
+          <p>Added a max-width for all text.</p>
+          <hr>
+          <p>Added a div container around all image tags.</p>
+          <hr>
+          <p>Adjusted hero images on blog specific pages as users said it that they couldn't view it properly.</p>
+          <hr>
+          <p>Changed colour of text on contact us section on landing page as the contrast was too low.</p>
+        </div>
+        <div>
+          <h3>How I Changed It</h3>
+          <p>Created a comments button. When the user clicks on it the form will display. I re-used the same styling as the contact form. Connected form to the comments form on wordpress and collected their comment data using the Flamingo plugin as well as added HTML validation.</p>
+          <hr>
+          <p>I set the max-width for the container surrounding the text.</p>
+          <hr>
+          <p>I previously had the image size set on the image tag. I now gave the image a width and height of 100% and then specified a width and height for the surrounding container. I also gave the image the object-fit property.</p>
+          <hr>
+          <p>All I did for this fix was to adjust the viewport height for the section and adjust the background image properties.</p>
+          <hr>
+          <p>I just changed the text colour to my black colour so that it would stand out better against the background colour.</p>
+        </div>
+        <div>
+          <h3>Why I Did It That Way</h3>
+          <p>I chose to display the form only when the user clicks so that it wouldn't clutter the page and the user could focus on the story. I think there was another way to post comments to wordpress but I could not get it working so I chose to use a contact form as it would look the same as well as store the data on the back-end.</p>
+          <hr>
+          <p>If a container contained multiple text elements then they would all have a max-width if I set it on the container.</p>
+          <hr>
+          <p>This would ensure that the images retain their aspect ratio when changing the viewport size.</p>
+          <hr>
+          <p>This was a simple fix but allowed the user to have a more pleasurable experience when viewing blogs on different viewport sizes.</p>
+          <hr>
+          <p>I chose to change the colour to the black as I knew the contrast would be much higher against that background. This would improve the accessibility of the site.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <small>Copyright &copy; 2021 James Badenhorst</small>
+  </footer>
+</body>
+</html>

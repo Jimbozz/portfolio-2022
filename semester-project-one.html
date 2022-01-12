@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/global.css">
+  <title>James | semester project one</title>
+</head>
+<body class="page-wrapper">
+  <header>
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/assets/Artboard 2 copy 6.png" alt="">
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="hero-wrapper cosmo">
+      <div class="hero-logo">
+        <img src="/assets/cosmo-logo-purple.png" alt="cosmo logo">
+      </div>
+    </div>
+    <section>
+      <div class="project-heading">
+        <h1>Semester Project One</h1>
+        <a class="project-link" href="https://github.com/Jimbozz/semester-project-one">Link to Github</a>
+        <a class="project-link" href="https://epic-cori-0d0125.netlify.app/index.html">Link to Website</a>
+      </div>
+      <div class="explanation">
+        <div>
+          <h3>What Was Changed</h3>
+          <p>Made site into a headless CMS.</p>
+          <hr>
+          <p>Added a page specific to each exhibition.</p>
+          <hr>
+          <p>Worked on form validation and sent data to wordpress.</p>
+          <hr>
+          <p>Had an input for first name and last name but chose to combine them into one input for full name.</p>
+          <hr>
+          <p>Went through CSS and HTML to remove any unused/unnecessary code.</p>
+          <hr>
+          <p>Changed hamburger menu.</p>
+          <hr>
+          <p>Made the museum fees section more visible.</p>
+          <hr>
+          <p>Changed wrapper around exhibition cards from DIV to Article tags as well as adding datetime.</p>
+        </div>
+        <div>
+          <h3>How I Changed It</h3>
+          <p>Created the wordpress backend and added all the posts that were in the HTML to the wordpress backend so I could serve them dynamically.</p>
+          <hr>
+          <p>I created each page and fetched the data from the wordpress backend.</p>
+          <hr>
+          <p>I made slight adjustments to how the validation messages were shown and shared the form data with wordpress backend.</p>
+          <hr>
+          <p>Created one input and changed the validation for that input using javascript.</p>
+          <hr>
+          <p>Went through all files and removed code as well as adjusting the tab space from 4 to 2.</p>
+          <hr>
+          <p>I created the hamburger menu from a checkbox hack to creating one using javascript and HTML.</p>
+          <hr>
+          <p>I had this section on the contact page before. Now I added buttons on the landing pages sections near the exhibition cards so that users could be re-directed to that section on another page which provided more information on fees, food, accessibility etc.</p>
+          <hr>
+          <p>As I was getting the information served dynamically I did not have to go through each card item, I could just add the article tag into the javascript which was creating the HTML.</p>
+        </div>
+        <div>
+          <h3>Why I Did It That Way</h3>
+          <p>I decided to create a headless CMS as if this was a real museum they would constantly be updating their exhibitions and news, so this way they could update and delete posts without out knowing any code.</p>
+          <hr>
+          <p>This was done so that users could get more information on each exhibition to help them decide if they would want to go to this specific one or not. Before this was created there was only exhibition cards which users complained that it was not supplying enough information.</p>
+          <hr>
+          <p>I chose to keep the javascript validation instead of just using HTML validation as I felt like you could provide a better user experience with errors etc.</p>
+          <hr>
+          <p>I changed it to one input after reading a couple articles on form experience for the user. It also allowed the form to be shorter for the user to fill in, thus resulting in a better experience.</p>
+          <hr>
+          <p>This was done to reduce the amount of code as well as making it easier for other people who will look at the code in the future.</p>
+          <hr>
+          <p>I did it this way as it looked better and created a smoother user experience when using the nav.</p>
+          <hr>
+          <p>I got feedback from users saying that it was hard to find out if it was free or how much it was to pay. So I made buttons on sections where the users started wondering about that so that the information could be provided to them.</p>
+          <hr>
+          <p>This was done as it would be more semantic serving it within an article tag compared to a DIV. I also added the datetime so that it was more readable by machines and people could easily add it to their calender.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <small>Copyright &copy; 2021 James Badenhorst</small>
+  </footer>
+</body>
+</html>

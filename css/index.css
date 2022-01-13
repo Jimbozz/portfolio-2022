@@ -36,11 +36,16 @@
 
 /*projects*/
 
+.projects {
+  margin: 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .card-layout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
-  padding: 5rem;
 }
 
 .card-layout a {
@@ -81,8 +86,5 @@
   margin-left: 1rem;
 }
 
-.projects h1 {
-  text-align: center;
-}
 
 

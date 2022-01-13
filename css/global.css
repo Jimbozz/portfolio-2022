@@ -57,6 +57,29 @@ html, body {
 main {
   flex-grow: 1;
 }
+
+/*button styles*/
+
+.large-button {
+  font-family: var(--font-mono),sans-serif, Verdana, Geneva, Tahoma;;
+  margin: 50px auto 0px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  text-decoration: none;
+  padding: 1.1rem 3rem;
+}
+
+.large-button i {
+  padding-left: 10px;
+}
+
+.large-button:hover {
+  background-color: var(--accent-color);
+  color: var(--main-bg);
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
 /*header*/
 
 header {

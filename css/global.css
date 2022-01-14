@@ -46,6 +46,7 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: scroll;
 }
 
 html, body {
@@ -55,7 +56,11 @@ html, body {
 
 main {
   flex-grow: 1;
-  padding: 8rem;
+  padding: 0px 8rem;
+}
+
+section {
+  padding: 5rem 0px;
 }
 
 /*button styles*/

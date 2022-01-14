@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 82vh;
 }
 
 .hero h1 {
@@ -79,11 +78,13 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 2rem;
+  padding: 5rem;
 }
 
-.card h3 {
+.card-heading {
   margin-left: 1rem;
+  font-family: var(--font-mono),sans-serif, Verdana, Geneva, Tahoma;
+  font-size: 1rem;
 }
 
 /*About*/

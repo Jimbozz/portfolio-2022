@@ -103,5 +103,36 @@
   list-style: none;
 }
 
+.about-photo {
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.about-photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  bottom: -94px;
+  position: relative;
+}
+
+.skills li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--accent-color);
+}
+
+.skills li {
+  padding-left: 23px;
+  position: relative;
+  font-family: 'Roboto Mono';
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
 
 

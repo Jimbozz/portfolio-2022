@@ -65,8 +65,9 @@ section {
 
 /*button styles*/
 
-.large-button {
-  font-family: var(--font-mono),sans-serif, Verdana, Geneva, Tahoma;;
+.large-button, .contact-button {
+  font-family: var(--font-mono),sans-serif, Verdana, Geneva, Tahoma;
+  font-size: 0.9rem;
   margin: 50px auto 0px;
   cursor: pointer;
   background-color: transparent;
@@ -76,15 +77,16 @@ section {
   padding: 1.1rem 3rem;
 }
 
-.large-button i {
+.large-button i, .contact-button i {
   padding-left: 10px;
 }
 
-.large-button:hover {
+.large-button:hover, .contact-button:hover {
   background-color: var(--accent-color);
   color: var(--main-bg);
   transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
+
 /*header*/
 
 header {

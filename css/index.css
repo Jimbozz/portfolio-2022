@@ -108,6 +108,10 @@
   overflow: hidden;
 }
 
+.about-content {
+  max-width: 500px;
+}
+
 .about-photo img {
   height: 100%;
   width: 100%;
@@ -121,8 +125,8 @@
   position: absolute;
   top: 8px;
   left: 0px;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   border: 2px solid var(--accent-color);
 }
 
@@ -132,6 +136,12 @@
   font-family: 'Roboto Mono';
   font-size: 1rem;
   margin-bottom: 10px;
+}
+
+/*contact*/
+
+.contact-wrapper {
+  text-align: center;
 }
 
 

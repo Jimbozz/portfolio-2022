@@ -1,22 +1,22 @@
-
-
-.light {
-  --text-main: #2D2F2B;
-  --main-bg: #F9F9F9;
-  --shadow: #2D2F2B;
+:root {
+  --accent-color: #48a274;
   --font-mono: "roboto mono";
-  --accent-color: #48A274;
 }
 
-/* .dark {
-  --text-heading: "roboto";
-  --text-paragraph: "roboto";
-  --color-text: #2D2F2B;
-  --color-grey: #f3f3f3;
-} */
+.light {
+  --text-main: #2d2f2b;
+  --main-bg: #f9f9f9;
+  --shadow: #d7dad5;
+}
+.dark {
+  --text-main: #d6d6d6;
+  --main-bg: #080808;
+  --shadow: #e0e0e0;
+}
 
-
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
@@ -29,19 +29,21 @@ html {
   font-size: 100%;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 600;
   color: var(--text-main);
 }
 
-
 .page {
-  font-family: "roboto",sans-serif, Verdana, Geneva, Tahoma;
-	font-size: calc(15px + 0.3vw);
-	line-height: 1.6;
+  font-family: "roboto", sans-serif, Verdana, Geneva, Tahoma;
+  font-size: calc(15px + 0.3vw);
+  line-height: 1.6;
   background-color: var(--main-bg);
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   color: var(--text-main);
   display: flex;
   flex-direction: column;
@@ -49,9 +51,9 @@ h1, h2, h3, h4 {
   overflow: scroll;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
-  
 }
 
 main {
@@ -65,8 +67,9 @@ section {
 
 /*button styles*/
 
-.large-button, .contact-button {
-  font-family: var(--font-mono),sans-serif, Verdana, Geneva, Tahoma;
+.large-button,
+.contact-button {
+  font-family: var(--font-mono), sans-serif, Verdana, Geneva, Tahoma;
   font-size: 0.9rem;
   margin: 50px auto 0px;
   cursor: pointer;
@@ -75,16 +78,19 @@ section {
   color: var(--accent-color);
   text-decoration: none;
   padding: 1.1rem 3rem;
+  display: inline-block;
 }
 
-.large-button i, .contact-button i {
+.large-button i,
+.contact-button i {
   padding-left: 10px;
 }
 
-.large-button:hover, .contact-button:hover {
+.large-button:hover,
+.contact-button:hover {
   background-color: var(--accent-color);
   color: var(--main-bg);
-  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 /*header*/
@@ -92,7 +98,7 @@ section {
 header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   height: 17vh;
   padding: 32px;
   position: sticky;
@@ -113,7 +119,6 @@ header {
 
 footer {
   height: 8vh;
-  border-top: 1px solid lightgray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,7 +144,7 @@ footer {
 }
 
 .makers {
-  background-color: #F2ECDE;
+  background-color: #f2ecde;
 }
 
 .cosmo {
@@ -147,7 +152,7 @@ footer {
 }
 
 .rainy {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .project-heading {
@@ -173,5 +178,79 @@ footer {
   height: 16rem;
 }
 
+/*dark mode toggle*/
 
+.toggle {
+  position: relative;
+  user-select: none;
+}
 
+.toggle-icon {
+  animation: wiggle 1s linear;
+}
+
+.toggle-icon {
+  width: 22px;
+  user-select: none;
+}
+
+.toggle-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  user-select: none;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 3px solid var(--text-main);
+  padding: 4px;
+  border-radius: 50px;
+  width: 80px;
+  margin: 0 auto;
+  background-color: var(--text-bg);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.toggle-label:hover {
+  background-color: var(--shadow);
+}
+
+.toggle-label:active {
+  transform: scale(0.95);
+}
+
+.transparency {
+  opacity: 1;
+  transition: all 0.1s ease;
+}
+
+.transparency:hover {
+  opacity: 0.7;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

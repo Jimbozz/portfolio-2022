@@ -142,6 +142,12 @@
 
 .contact-wrapper {
   text-align: center;
+  margin-bottom: 10rem;
+}
+
+.contact-wrapper p {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 

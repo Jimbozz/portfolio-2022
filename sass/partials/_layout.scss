@@ -1,0 +1,60 @@
+:root {
+  --accent-color: #48a274;
+  --font-mono: "roboto mono";
+}
+
+.light {
+  --text-main: #2d2f2b;
+  --main-bg: #f9f9f9;
+  --shadow: #d7dad5;
+}
+.dark {
+  --text-main: #d6d6d6;
+  --main-bg: #080808;
+  --shadow: #e0e0e0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+}
+
+.page {
+  background-color: var(--main-bg);
+  margin: 0;
+  padding: 0;
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: scroll;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+  padding: 0px 8rem;
+}
+
+section {
+  padding: 5rem 0px;
+}
+
+/*Footer*/
+
+footer {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}

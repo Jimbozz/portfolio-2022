@@ -1,0 +1,76 @@
+/*dark mode toggle*/
+
+.toggle {
+  position: relative;
+  user-select: none;
+}
+
+.toggle-icon {
+  animation: wiggle 1s linear;
+}
+
+.toggle-icon {
+  width: 22px;
+  user-select: none;
+}
+
+.toggle-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  user-select: none;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 3px solid var(--text-main);
+  padding: 4px;
+  border-radius: 50px;
+  width: 80px;
+  margin: 0 auto;
+  background-color: var(--text-bg);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.toggle-label:hover {
+  background-color: var(--shadow);
+}
+
+.toggle-label:active {
+  transform: scale(0.95);
+}
+
+.transparency {
+  opacity: 1;
+  transition: all 0.1s ease;
+}
+
+.transparency:hover {
+  opacity: 0.7;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

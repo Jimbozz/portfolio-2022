@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "roboto", sans-serif, Verdana, Geneva, Tahoma;
+  font-family: $font;
   font-size: calc(15px + 0.3vw);
   line-height: 1.6;
 }
@@ -13,10 +13,10 @@ h2,
 h3,
 h4 {
   font-weight: 600;
-  color: var(--text-main);
 }
 
 a {
   text-decoration: none;
   color: var(--text-main);
+  cursor: pointer;
 }

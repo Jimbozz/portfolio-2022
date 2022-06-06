@@ -1,7 +1,7 @@
 const page = document.querySelector(".page");
 const toggle = page.querySelector(".toggle-input");
 const toggleIcon = page.querySelector(".toggle-icon");
-const logo = document.querySelector(".logo-item");
+const logo = document.querySelector(".nav-logo__item");
 
 // set theme and localStorage on page load
 setCheckedState();

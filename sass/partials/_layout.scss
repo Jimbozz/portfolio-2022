@@ -1,17 +1,17 @@
 :root {
-  --accent-color: #48a274;
-  --font-mono: "roboto mono";
+  --dark-bg: #161515;
+  --light-bg: #f9f9f9;
+  --text-dark: #2d2f2b;
+  --text-light: #d6d6d6;
 }
 
 .light {
-  --text-main: #2d2f2b;
-  --main-bg: #f9f9f9;
-  --shadow: #d7dad5;
+  --text-main: var(--text-dark, black);
+  --main-bg: var(--light-bg, white);
 }
 .dark {
-  --text-main: #d6d6d6;
-  --main-bg: #080808;
-  --shadow: #e0e0e0;
+  --text-main: var(--text-light, white);
+  --main-bg: var(--dark-bg, black);
 }
 
 *,
@@ -20,8 +20,8 @@
   box-sizing: border-box;
 }
 
-nav {
-  display: flex;
+ul {
+  list-style: none;
 }
 
 .page {

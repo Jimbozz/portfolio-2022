@@ -10,7 +10,7 @@
 }
 
 .toggle-icon {
-  width: 22px;
+  width: 18px;
   user-select: none;
 }
 
@@ -27,18 +27,18 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border: 3px solid var(--text-main);
+  // border: 2px solid var(--text-main);
   padding: 4px;
   border-radius: 50px;
-  width: 80px;
+  // width: 80px;
   margin: 0 auto;
-  background-color: var(--text-bg);
+  background-color: #f9f9f9;
   transition: all 0.3s ease;
   user-select: none;
 }
 
 .toggle-label:hover {
-  background-color: var(--shadow);
+  background-color: $shadow;
 }
 
 .toggle-label:active {

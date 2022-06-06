@@ -4,31 +4,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
 
-.hero h1 {
-  font-family: var(--font-mono);
-  font-size: 1.2rem;
-}
+  &-content {
+    max-width: 50vw;
 
-.hero h2 {
-  color: var(--accent-color);
-  font-size: 2.2rem;
-  margin: 0px;
-}
+    h1 {
+      font-family: $font-mono;
+      font-size: 1.2rem;
+    }
 
-.hero h3 {
-  font-size: 2.2rem;
-  margin: 0px;
-}
+    h2 {
+      color: $accent-color;
+    }
 
-.hero p {
-  margin: 1rem 0px;
-  max-width: 50vw;
-}
-
-.hero-content {
-  max-width: 60vw;
+    h2,
+    h3 {
+      font-size: 2.2rem;
+      margin: 0px;
+    }
+  }
 }
 
 /*projects*/
@@ -42,10 +36,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
-}
-
-.card-layout a {
-  cursor: pointer;
 }
 
 .card {
@@ -67,12 +57,6 @@
   width: auto;
 }
 
-.card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .card-image-makers,
 .card-image-cosmo,
 .card-image-rainy {
@@ -84,7 +68,7 @@
 
 .card-heading {
   margin-left: 1rem;
-  font-family: var(--font-mono), sans-serif, Verdana, Geneva, Tahoma;
+  font-family: $font-mono;
   font-size: 1rem;
 }
 
@@ -155,7 +139,6 @@
   grid-template-columns: repeat(2, minmax(140px, 200px));
   gap: 0px 10px;
   padding: 0px;
-  list-style: none;
 }
 
 .about-photo {
@@ -182,13 +165,13 @@
   left: 0px;
   width: 7px;
   height: 7px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid $accent-color;
 }
 
 .skills li {
   padding-left: 23px;
   position: relative;
-  font-family: "Roboto Mono";
+  font-family: $font-mono;
   font-size: 1rem;
   margin-bottom: 10px;
 }

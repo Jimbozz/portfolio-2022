@@ -1,3 +1,5 @@
+//TOGGLE LIGHT AND DARK THEME
+
 const page = document.querySelector(".page");
 const toggle = page.querySelector(".toggle-input");
 const toggleIcon = page.querySelector(".toggle-icon");
@@ -34,7 +36,6 @@ function replaceClass() {
 }
 
 function toggleIconTheme() {
-  // Replace icons not able to be targeted by css variables
   if (page.classList.contains("light")) {
     toggleIcon.src = "./assets/moon-solid.svg";
     toggleIcon.alt = "Switch to Dark Mode";
@@ -57,3 +58,18 @@ function isTrue(value) {
 
 // Toggle theme any time the state of the checkbox changes
 toggle.addEventListener("change", toggleTheme);
+
+//BURGER MENU
+
+const navSlider = function () {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-unique");
+
+  burger.addEventListener("click", function () {
+    nav.classList.toggle("nav-active");
+    // burger.classList.toggle("nav-active");
+    burger.classList.toggle("toggle");
+  });
+};
+
+navSlider();

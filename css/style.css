@@ -106,12 +106,14 @@ ul {
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow: scroll;
 }
 
 html,
 body {
   height: 100vh;
+  overflow-x: hidden;
+  position: absolute;
+  width: 100%;
 }
 
 main {
@@ -155,7 +157,6 @@ a {
   cursor: pointer;
 }
 
-/*header*/
 .nav {
   display: flex;
   justify-content: space-between;
@@ -170,14 +171,80 @@ a {
   width: 100%;
   height: 100%;
 }
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+
+header {
+  background: rgba(255, 255, 255, 0.4509803922);
+  height: 100px;
+  top: 0;
+  z-index: 100;
+  position: sticky;
 }
-.nav-links__list {
+
+.burger {
+  display: block;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 4px;
+  background-color: #0a0d00;
+  margin: 5px;
+  transition: all 0.3s ease;
+  border-radius: 7px;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+
+.toggle .line1,
+.toggle .line2,
+.toggle .line3 {
+  background-color: white;
+}
+
+.nav-unique {
+  position: absolute;
+  right: 0px;
+  top: 0vh;
+  height: 100vh;
+  background-color: grey;
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 32vw;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+  padding: 120px 0px 0px 30px;
+  margin-top: 0px;
+  gap: 21px;
+}
+
+.nav-active {
+  transform: translateX(0%);
+  margin-top: 0px;
+}
+
+.nav-style {
+  color: white;
+  margin-right: 10px;
+}
+
+.nav-style:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: red;
 }
 
 /*button styles*/

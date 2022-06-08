@@ -1,5 +1,5 @@
 /*dark mode toggle*/
-.toggle {
+.toggle-style {
   position: relative;
   user-select: none;
 }
@@ -108,6 +108,14 @@ ul {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100vh;
@@ -119,6 +127,11 @@ body {
 main {
   flex: 1 0 auto;
   padding: 0px 8rem;
+}
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 0px 3rem;
+  }
 }
 
 section {
@@ -162,86 +175,39 @@ nav a {
   font-size: 1rem;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-}
-.nav-logo {
-  height: 50px;
-  width: auto;
-}
-.nav-logo__item {
-  width: 100%;
-  height: 100%;
-}
-
-.nav-list {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.burger {
-  display: none;
-}
-
-.active {
-  color: #48a274;
-  text-decoration: underline;
-}
-
-.nav-style:hover {
-  color: #48a274;
-}
-
 @media only screen and (max-width: 600px) {
   header {
     top: 0;
     z-index: 100;
     position: sticky;
   }
-
-  .burger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .burger div {
-    width: 25px;
-    height: 4px;
-    background-color: var(--dark-bg);
-    margin: 5px;
-    transition: all 0.3s ease;
-    border-radius: 7px;
-  }
-
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-7px, 6px);
-  }
-
-  .toggle .line2 {
-    opacity: 0;
-  }
-
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-7px, -6px);
-  }
-
-  .toggle .line1,
-.toggle .line2,
-.toggle .line3 {
-    background-color: var(--dark-bg);
-  }
-
-  .nav-list {
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+header .nav-logo {
+  height: 50px;
+  width: auto;
+}
+header .nav-logo__item {
+  width: 100%;
+  height: 100%;
+}
+header .nav-list {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  header .nav-list {
     position: absolute;
     right: 0px;
     top: 0vh;
     height: 100vh;
     background-color: var(--light-bg);
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100vw;
@@ -249,25 +215,58 @@ nav a {
     transition: transform 0.5s ease-in;
     padding: 120px 0px 0px 30px;
     margin-top: 0px;
-    gap: 21px;
-  }
-
-  .nav-active {
-    transform: translateX(0%);
-  }
-
-  .nav-style {
-    color: var(--text-dark);
-  }
-
-  .active {
-    color: #48a274;
-  }
-
-  .burger-dark {
-    background-color: var(--light-bg) !important;
   }
 }
+header .nav-list .active {
+  color: #48a274;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+  header .nav-list__style {
+    color: var(--text-dark);
+  }
+}
+header .nav-list__style:hover {
+  color: #48a274;
+}
+header .nav .burger {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  header .nav .burger {
+    display: block;
+    cursor: pointer;
+  }
+  header .nav .burger-lines {
+    width: 25px;
+    height: 4px;
+    background-color: var(--dark-bg, black);
+    margin: 5px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    border: 1px solid var(--light-bg, white);
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .nav .nav-active {
+    transform: translateX(0%);
+  }
+  header .nav .toggle .line1 {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  header .nav .toggle .line2 {
+    opacity: 0;
+  }
+  header .nav .toggle .line3 {
+    transform: rotate(45deg) translate(-7px, -6px);
+  }
+  header .nav .toggle .line1,
+header .nav .toggle .line2,
+header .nav .toggle .line3 {
+    background-color: var(--dark-bg);
+  }
+}
+
 /*button styles*/
 .btn {
   font-family: "roboto mono", monospace;

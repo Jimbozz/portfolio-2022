@@ -1,5 +1,6 @@
 export default function createMenu() {
   const container = document.querySelector("nav");
+  const { pathname } = document.location;
 
   container.innerHTML = `
 <div class="nav-logo">
@@ -11,16 +12,20 @@ export default function createMenu() {
         </div>
         <ul class="nav-list">
           <li>
-            <a href="/index.html" class="active nav-list__style">Home</a>
+            <a href="/index.html" class="nav-list__style ${
+              pathname === "/index.html" ? "active" : ""
+            }">Home</a>
           </li>
           <li>
             <a href="/index.html#about" class="nav-list__style">About</a>
           </li>
           <li>
-            <a href="" class="nav-list__style">Projects</a>
+            <a href="/projects.html" class="nav-list__style ${
+              pathname === "/projects.html" ? "active" : ""
+            }">Projects</a>
           </li>
           <li>
-            <a href="" class="nav-list__style">Contact</a>
+            <a href="/index.html#contact" class="nav-list__style">Contact</a>
           </li>
           <div class="toggle-style">
             <input type="checkbox" id="theme" class="toggle-input" checked />
@@ -32,7 +37,7 @@ export default function createMenu() {
               />
             </label>
           </div>
-          <a class="btn btn-nav">Resume</a>
+          <a href="" class="btn btn-nav">Resume</a>
         </ul>
         <div class="burger">
           <div class="line1 burger-lines"></div>

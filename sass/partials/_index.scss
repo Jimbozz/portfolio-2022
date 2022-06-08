@@ -75,60 +75,6 @@
   font-size: 1rem;
 }
 
-/*project specific layout*/
-
-.hero-wrapper {
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-logo {
-  height: 6rem;
-  width: auto;
-}
-
-.hero-logo img {
-  width: auto;
-  height: 100%;
-}
-
-.makers {
-  background-color: #f2ecde;
-}
-
-.cosmo {
-  background-color: #60e6b2;
-}
-
-.rainy {
-  background-color: #f6f6f6;
-}
-
-.project-heading {
-  text-align: center;
-}
-
-.project-link {
-  margin: 0px 1rem;
-  text-decoration: underline;
-}
-
-.explanation {
-  display: flex;
-  margin: 6rem 2rem;
-  gap: 2rem;
-}
-
-.explanation div {
-  flex: 1;
-}
-
-.explanation p {
-  height: 16rem;
-}
-
 /*About*/
 
 .about {

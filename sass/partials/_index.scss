@@ -1,4 +1,4 @@
-/*hero*/
+//hero
 
 .hero {
   display: flex;
@@ -28,54 +28,14 @@
   }
 }
 
-/*projects*/
+//projects section
 
 .projects {
   display: flex;
   flex-direction: column;
 }
 
-.card-layout {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
-}
-
-.card {
-  height: auto;
-  overflow: hidden;
-  border-radius: 0.2rem;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
-  position: relative;
-  top: 0;
-  transition: top ease 0.5s;
-}
-
-.card:hover {
-  top: -10px;
-}
-
-.content {
-  height: 16rem;
-  width: auto;
-}
-
-.card-image-makers,
-.card-image-cosmo,
-.card-image-rainy {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 5rem;
-}
-
-.card-heading {
-  margin-left: 1rem;
-  font-family: $font-mono;
-  font-size: 1rem;
-}
-
-/*About*/
+//About section
 
 .about {
   // display: flex;
@@ -133,7 +93,7 @@
   margin-bottom: 10px;
 }
 
-/*contact*/
+//contact section
 
 .contact-wrapper {
   text-align: center;

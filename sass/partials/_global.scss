@@ -1,0 +1,65 @@
+//card styles
+
+.card-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  height: auto;
+  overflow: hidden;
+  border-radius: 0.2rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.card:hover {
+  top: -10px;
+}
+
+.content {
+  height: 16rem;
+  width: auto;
+}
+
+.card-image-makers,
+.card-image-cosmo,
+.card-image-rainy {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 5rem;
+}
+
+.card-heading {
+  margin-left: 1rem;
+  font-family: $font-mono;
+  font-size: 1rem;
+}
+
+//project specific styles layout
+
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.hero-logo {
+  height: auto;
+  width: 10rem;
+  text-align: center;
+}
+
+.hero-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-logo p {
+  margin: 0px;
+}

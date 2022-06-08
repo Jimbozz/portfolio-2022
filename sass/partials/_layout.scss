@@ -1,6 +1,6 @@
 :root {
-  --dark-bg: #161515;
-  --light-bg: #f9f9f9;
+  --dark-bg: #000012;
+  --light-bg: #fffefe;
   --text-dark: #2d2f2b;
   --text-light: #d6d6d6;
 }
@@ -61,14 +61,16 @@ main {
 
 section {
   padding: 5rem 0px;
+  @media only screen and (max-width: 600px) {
+    padding: 2rem 0px;
+  }
 }
 
 /*Footer*/
 
 footer {
-  height: 8vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-shrink: 0;
+  flex-direction: column;
 }

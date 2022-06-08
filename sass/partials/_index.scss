@@ -7,6 +7,9 @@
 
   &-content {
     max-width: 50vw;
+    @media only screen and (max-width: 600px) {
+      max-width: 100vw;
+    }
 
     h1 {
       font-family: $font-mono;
@@ -129,9 +132,17 @@
 /*About*/
 
 .about {
+  // display: flex;
+  // flex-wrap: wrap-reverse;
+  // gap: 6rem;
+
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  // grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
   gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
 }
 
 .skills {
@@ -142,8 +153,8 @@
 }
 
 .about-photo {
-  max-width: 300px;
   overflow: hidden;
+  height: 500px;
 }
 
 .about-content {

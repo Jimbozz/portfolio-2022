@@ -255,6 +255,7 @@ header .nav-list {
   display: flex;
   gap: 1rem;
   align-items: center;
+  margin: 0px;
 }
 @media only screen and (max-width: 600px) {
   header .nav-list {
@@ -345,6 +346,9 @@ header .nav .toggle .line3 {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+.back-link:hover {
+  color: #35845c;
+}
 .back-link i {
   margin-right: 0.5rem;
 }

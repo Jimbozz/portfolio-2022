@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: $font;
-  font-size: calc(15px + 0.3vw);
+  font-size: calc(13px + 0.3vw);
   line-height: 1.6;
 }
 
@@ -26,6 +26,14 @@ nav a {
   font-size: 1rem;
 }
 
-// .hero-logo p {
-//   font-family: $font-mono;
-// }
+.technologies {
+  ul {
+    font-family: $font-mono;
+  }
+}
+
+.hero-logo {
+  p {
+    font-family: $font-mono;
+  }
+}

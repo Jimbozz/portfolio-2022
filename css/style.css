@@ -514,4 +514,15 @@ header .nav .toggle .line3 {
 
 .homeland {
   background-color: #f8e5db;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.project-images__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }/*# sourceMappingURL=style.css.map */

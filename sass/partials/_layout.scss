@@ -66,6 +66,14 @@ section {
   }
 }
 
+.max {
+  max-width: 50vw;
+
+  @media only screen and (max-width: 600px) {
+    max-width: 100vw;
+  }
+}
+
 //footer
 
 .footer {

@@ -39,7 +39,7 @@ export default function createMenu() {
           </div>
           <a href="" class="btn btn-nav">Resume</a>
         </ul>
-        <div class="burger">
+        <div class="burger" aria-label="menu">
           <div class="line1 burger-lines"></div>
           <div class="line2 burger-lines"></div>
           <div class="line3 burger-lines"></div>

@@ -36,6 +36,26 @@
   font-size: 1rem;
 }
 
+.homeland {
+  background-color: #f8e5db;
+}
+
+.makers {
+  background-color: #f2ecde;
+}
+
+.rainy {
+  background-color: #f6f6f6;
+}
+
+.soles {
+  background-color: black;
+}
+
+.cosmo {
+  background-color: #60e6b2;
+}
+
 .toggle-style {
   position: relative;
   user-select: none;
@@ -494,26 +514,6 @@ header .nav .toggle .line3 {
   .project-overview {
     max-width: 100vw;
   }
-}
-
-.makers {
-  background-color: #f2ecde;
-}
-
-.cosmo {
-  background-color: #60e6b2;
-}
-
-.rainy {
-  background-color: #f6f6f6;
-}
-
-.soles {
-  background-color: black;
-}
-
-.homeland {
-  background-color: #f8e5db;
 }
 
 .project-images {

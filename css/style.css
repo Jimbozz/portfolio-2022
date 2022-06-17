@@ -493,6 +493,9 @@ header .nav .burger {
 .project-overview {
   margin: 0 auto;
 }
+.project-overview ul {
+  list-style-type: disc;
+}
 
 .projects h1,
 .projects h2 {

@@ -2,15 +2,23 @@ $accent-color: #35845c;
 $shadow: #d7dad5;
 $font-mono: "roboto mono", monospace;
 $font: "roboto", sans-serif, Verdana, Geneva, Tahoma;
+$text-dark: #2d2f2b;
+$text-light: #d6d6d6;
+$light-bg: #fffefe;
+$dark-bg: #000012;
 
-// $colours: (
-//   green-colour: #48a274,
-//   dark-text: #2d2f2b,
-//   light-text: #d6d6d6,
-//   dark-bg: #080808,
-//   light-bg: #f9f9f9,
-// );
+:root {
+  --dark-bg: #{$dark-bg};
+  --light-bg: #{$light-bg};
+  --text-dark: #{$text-dark};
+  --text-light: #{$text-light};
+}
 
-// @function getColour($colour) {
-//   @return map-get($colours, $colour);
-// }
+.light {
+  --text-main: var(--text-dark, black);
+  --main-bg: var(--light-bg, white);
+}
+.dark {
+  --text-main: var(--text-light, white);
+  --main-bg: var(--dark-bg, black);
+}

@@ -14,6 +14,7 @@
   position: relative;
   top: 0;
   transition: top ease 0.5s;
+  border: 1px solid #fffefe26;
 }
 
 .card:hover {
@@ -33,7 +34,8 @@
 }
 
 .card-heading {
-  margin-left: 1rem;
+  padding: 1rem;
+  margin: 0px;
   font-family: $font-mono;
   font-size: 1rem;
 }

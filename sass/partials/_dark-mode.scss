@@ -32,7 +32,7 @@
   border-radius: 50px;
   // width: 80px;
   margin: 0 auto;
-  background-color: var(--light-bg);
+  background-color: $light-bg;
   transition: all 0.3s ease;
   user-select: none;
 }

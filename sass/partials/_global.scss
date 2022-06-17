@@ -14,31 +14,30 @@
   position: relative;
   top: 0;
   transition: top ease 0.5s;
-  border: 1px solid #fffefe26;
+  border: 1px solid #fffefe45;
+
+  &:hover {
+    top: -10px;
+  }
+
+  &-content {
+    height: 16rem;
+    width: auto;
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 5rem;
+    }
+  }
+
+  &-heading {
+    padding: 1rem;
+    margin: 0px;
+  }
 }
 
-.card:hover {
-  top: -10px;
-}
-
-.card-content {
-  height: 16rem;
-  width: auto;
-}
-
-.card-content__image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 5rem;
-}
-
-.card-heading {
-  padding: 1rem;
-  margin: 0px;
-  font-family: $font-mono;
-  font-size: 1rem;
-}
 //Background colours for cards and project specific hero
 .homeland {
   background-color: #f8e5db;

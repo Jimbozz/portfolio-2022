@@ -29,30 +29,24 @@
   position: relative;
   top: 0;
   transition: top ease 0.5s;
-  border: 1px solid rgba(255, 254, 254, 0.1490196078);
+  border: 1px solid rgba(255, 254, 254, 0.2705882353);
 }
-
 .card:hover {
   top: -10px;
 }
-
 .card-content {
   height: 16rem;
   width: auto;
 }
-
 .card-content__image {
   width: 100%;
   height: 100%;
   object-fit: contain;
   padding: 5rem;
 }
-
 .card-heading {
   padding: 1rem;
   margin: 0px;
-  font-family: "roboto mono", monospace;
-  font-size: 1rem;
 }
 
 .homeland {
@@ -240,6 +234,11 @@ a {
 
 .hero-logo p {
   font-family: "roboto mono", monospace;
+}
+
+.card-heading {
+  font-family: "roboto mono", monospace;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 600px) {

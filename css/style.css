@@ -79,25 +79,14 @@
   position: relative;
   user-select: none;
 }
-
-.toggle-icon {
-  animation: wiggle 1s linear;
-}
-
-.toggle-icon {
-  width: 18px;
-  user-select: none;
-}
-
-.toggle-input {
+.toggle-style .toggle-input {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   user-select: none;
 }
-
-.toggle-label {
+.toggle-style .toggle-label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,22 +98,16 @@
   transition: all 0.3s ease;
   user-select: none;
 }
-
-.toggle-label:hover {
+.toggle-style .toggle-label__icon {
+  width: 18px;
+  user-select: none;
+  animation: wiggle 1s linear;
+}
+.toggle-style .toggle-label:hover {
   background-color: #d7dad5;
 }
-
-.toggle-label:active {
+.toggle-style .toggle-label:active {
   transform: scale(0.95);
-}
-
-.transparency {
-  opacity: 1;
-  transition: all 0.1s ease;
-}
-
-.transparency:hover {
-  opacity: 0.7;
 }
 
 @keyframes wiggle {

@@ -35,7 +35,7 @@ export default function createMenu() {
               <img
                 src="./assets/moon-solid.svg"
                 alt="Dark mode"
-                class="toggle-icon"
+                class="toggle-label__icon"
               />
             </label>
           </div>

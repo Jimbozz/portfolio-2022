@@ -6,7 +6,7 @@ createMenu();
 
 const page = document.querySelector(".page");
 const toggler = page.querySelector(".toggle-input");
-const toggleIcon = page.querySelector(".toggle-icon");
+const toggleIcon = page.querySelector(".toggle-label__icon");
 const logo = document.querySelector(".nav-logo__item");
 
 setCheckedState();

@@ -3,55 +3,40 @@
 .toggle-style {
   position: relative;
   user-select: none;
-}
 
-.toggle-icon {
-  animation: wiggle 1s linear;
-}
+  .toggle-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    user-select: none;
+  }
 
-.toggle-icon {
-  width: 18px;
-  user-select: none;
-}
+  .toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50px;
+    margin: 0 auto;
+    background-color: $light-bg;
+    transition: all 0.3s ease;
+    user-select: none;
 
-.toggle-input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  user-select: none;
-}
+    &__icon {
+      width: 18px;
+      user-select: none;
+      animation: wiggle 1s linear;
+    }
 
-.toggle-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  // border: 2px solid var(--text-main);
-  padding: 4px;
-  border-radius: 50px;
-  // width: 80px;
-  margin: 0 auto;
-  background-color: $light-bg;
-  transition: all 0.3s ease;
-  user-select: none;
-}
-
-.toggle-label:hover {
-  background-color: $shadow;
-}
-
-.toggle-label:active {
-  transform: scale(0.95);
-}
-
-.transparency {
-  opacity: 1;
-  transition: all 0.1s ease;
-}
-
-.transparency:hover {
-  opacity: 0.7;
+    &:hover {
+      background-color: $shadow;
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
 }
 
 @keyframes wiggle {

@@ -15,6 +15,16 @@
   --main-bg: var(--dark-bg, black);
 }
 
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -124,16 +134,6 @@
     transform: rotate(0deg);
   }
 }
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-}
-
 .page {
   background-color: var(--main-bg);
   margin: 0;

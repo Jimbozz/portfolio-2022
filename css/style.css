@@ -426,12 +426,18 @@ header .nav .burger {
 .about-photo {
   overflow: hidden;
   height: 500px;
+  margin-left: 5rem;
+}
+@media only screen and (max-width: 600px) {
+  .about-photo {
+    margin-left: 0px;
+  }
 }
 .about-photo img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  bottom: -94px;
+  bottom: -85px;
   position: relative;
 }
 

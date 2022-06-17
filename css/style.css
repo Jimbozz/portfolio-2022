@@ -400,32 +400,22 @@ header .nav .burger {
     display: block;
   }
 }
-
-.skills {
+.about-content {
+  max-width: 500px;
+}
+.about-content__skills {
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
   gap: 0px 10px;
   padding: 0px;
 }
-
-.about-photo {
-  overflow: hidden;
-  height: 500px;
-}
-
-.about-content {
-  max-width: 500px;
-}
-
-.about-photo img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  bottom: -94px;
+.about-content__skills li {
+  padding-left: 23px;
   position: relative;
+  font-family: "roboto mono", monospace;
+  margin-bottom: 10px;
 }
-
-.skills li::before {
+.about-content__skills li::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -434,19 +424,22 @@ header .nav .burger {
   height: 7px;
   border: 2px solid #35845c;
 }
-
-.skills li {
-  padding-left: 23px;
+.about-photo {
+  overflow: hidden;
+  height: 500px;
+}
+.about-photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  bottom: -94px;
   position: relative;
-  font-family: "roboto mono", monospace;
-  margin-bottom: 10px;
 }
 
 .contact-wrapper {
   text-align: center;
   margin-bottom: 10rem;
 }
-
 .contact-wrapper p {
   max-width: 500px;
   margin: 0 auto;

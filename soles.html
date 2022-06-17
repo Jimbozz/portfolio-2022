@@ -35,25 +35,121 @@
         <ul>
           <li>Javascript</li>
           <li>Sass</li>
-          <li>React</li>
-          <li>Wordpress</li>
+          <li>Bootstrap</li>
+          <li>Strapi API</li>
         </ul>
         <div>
-          <a href="https://github.com/Jimbozz/makers-portfolio">
+          <a
+            href="https://github.com/Jimbozz/james-badenhorst-semester-project-2"
+          >
             <i class="fa-brands fa-github fa-lg"></i>
-          </a>
-          <a href="https://makers-v2.netlify.app/">
-            <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i>
           </a>
         </div>
       </div>
       <section class="project-overview max">
         <h1>Overview</h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-          aliquam praesentium nulla a harum eveniet voluptate eius quia.
-          Provident numquam consequuntur odit ab delectus expedita? Veniam
-          officiis aliquam dolore ullam!
+          We had to create an e-commerce website that had both customer-facing
+          and admin sections. Both sections were to be responsive and the
+          website would be populated by a Strapi API.
+        </p>
+        <h2>Brief</h2>
+        <p>
+          We could can choose the theme of the website. It should follow the
+          site architecture described below. Designed the website and logo using
+          Adobe XD and illustrator.
+        </p>
+        <p>
+          Built a frontend with home, product list, product detail and cart
+          pages.
+        </p>
+        <p>Built the admin pages to create, update and delete products.</p>
+        <h2>Process</h2>
+        <h3>Home page</h3>
+        <p>The home page included:</p>
+        <ul>
+          <li>A hero banner with an image that was uploaded to Strapi.</li>
+          <li>
+            A list of featured products. When a product is marked as 'featured'
+            on Strapi it was to be displayed on the homepage.
+          </li>
+        </ul>
+        <h3>Products page</h3>
+        <p>The products page included:</p>
+        <ul>
+          <li>
+            A list of all products added to Strapi. Each product displayed its
+            title, price and image. The product linked to its products detail
+            page.
+          </li>
+          <li>
+            A search text box. When searching (filtering), only the products
+            that include the searched text in their title or description were
+            listed.
+          </li>
+        </ul>
+        <h3>Product details page</h3>
+        <p>
+          This page is reached by a user clicking on a product on the product
+          list page. The product details page must include:
+        </p>
+        <ul>
+          <li>Title</li>
+          <li>Description</li>
+          <li>Image</li>
+          <li>Price</li>
+          <li>
+            An add to cart button. This toggled the product in and out of a cart
+            array stored in local storage.
+          </li>
+        </ul>
+        <h3>Cart/Basket page</h3>
+        <p>
+          The cart/basket page displays a list of all products added to the
+          cart. Next load the items that have been added to local storage and
+          display them on the page. If the cart was empty a message was
+          displayed indicating this.
+        </p>
+        <p>Each product in the cart must display:</p>
+        <ul>
+          <li>Title</li>
+          <li>Price</li>
+          <li>A link to the product view page</li>
+          <li>Image</li>
+        </ul>
+        <p>
+          After the list of products, the total price of all the products in the
+          cart was to be displayed.
+        </p>
+        <h2>Admin section</h2>
+        <p>
+          The admin section (apart from the log in form) must only be accessible
+          to logged in admin users and the following features were to be
+          included.
+        </p>
+        <h3>Login/logout</h3>
+        <p>
+          Created an admin login form that allowed administrator users to login.
+          Used local storage to keep the user logged in.
+        </p>
+        <p>
+          When logged in, a logout button must be displayed in the layout that
+          logs the user out. Logging out should not clear the cart.
+        </p>
+        <h3>Add/edit products</h3>
+        <p>
+          Created form(s) that allowed products to be added and edited. The form
+          allowed the user to toggle whether a product is featured or not.
+        </p>
+        <h3>Product images</h3>
+        <p>For adding/editing product images I used:</p>
+        <ul>
+          <li>A file upload field to upload images to Strapi</li>
+        </ul>
+        <p>
+          Allowed products to be deleted. Before a product is deleted I had to
+          display a confirmation dialog. The product should only be deleted if
+          the user confirms.
         </p>
       </section>
     </main>

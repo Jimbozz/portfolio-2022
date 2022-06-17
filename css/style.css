@@ -147,7 +147,6 @@ ul {
 html {
   scroll-behavior: smooth;
 }
-
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -452,19 +451,16 @@ header .nav .burger {
   height: 65vh;
   margin-top: 1rem;
 }
-
-.hero-logo {
+.hero-wrapper .hero-logo {
   height: auto;
   width: 10rem;
   text-align: center;
 }
-
-.hero-logo img {
+.hero-wrapper .hero-logo img {
   width: 100%;
   height: 100%;
 }
-
-.hero-logo p {
+.hero-wrapper .hero-logo p {
   margin: 0px;
 }
 

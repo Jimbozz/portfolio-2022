@@ -3,12 +3,14 @@ export default function createMenu() {
   const { pathname } = document.location;
 
   container.innerHTML = `
-<div class="nav-logo">
+        <div class="nav-logo">
+        <a href="/index.html">
           <img
             class="nav-logo__item"
             src="/assets/james-logo-black.svg"
             alt="james logo"
           />
+          </a>
         </div>
         <ul class="nav-list">
           <li>

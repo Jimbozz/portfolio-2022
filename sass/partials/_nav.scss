@@ -33,7 +33,7 @@ header {
         right: 0px;
         top: 0vh;
         height: 100vh;
-        background-color: var(--light-bg);
+        background-color: $light-bg;
         flex-direction: column;
         align-items: flex-start;
         width: 100vw;
@@ -50,7 +50,7 @@ header {
       &__style {
         //burger menu styles
         @media only screen and (max-width: 600px) {
-          color: var(--text-dark);
+          color: $text-dark;
         }
         &:hover {
           color: $accent-color;
@@ -69,11 +69,11 @@ header {
         &-lines {
           width: 25px;
           height: 4px;
-          background-color: var(--dark-bg, black);
+          background-color: $dark-bg;
           margin: 5px;
           transition: all 0.3s ease;
           border-radius: 7px;
-          border: 1px solid var(--light-bg, white);
+          border: 1px solid $light-bg;
         }
       }
     }
@@ -94,11 +94,11 @@ header {
         transform: rotate(45deg) translate(-7px, -6px);
       }
 
-      .toggle .line1,
-      .toggle .line2,
-      .toggle .line3 {
-        background-color: var(--dark-bg);
-      }
+      // .toggle .line1,
+      // .toggle .line2,
+      // .toggle .line3 {
+      //   background-color: var(--dark-bg);
+      // }
     }
   }
 }

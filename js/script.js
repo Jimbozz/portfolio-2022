@@ -37,19 +37,10 @@ function toggleIconTheme() {
     toggleIcon.src = "./assets/moon-solid.svg";
     toggleIcon.alt = "Switch to Dark Mode";
     logo.src = "/assets/james-logo-black.svg";
-
-    // for (const div of burgerLines) {
-    //   div.classList.remove("burger-dark");
-    // }
   } else {
     toggleIcon.src = "./assets/sun-solid.svg";
     toggleIcon.alt = "Switch to Light Mode";
     logo.src = "/assets/james-logo-white.svg";
-
-    // burgerLines.classList.add("dark-lines");
-    // for (const div of burgerLines) {
-    //   div.classList.add("burger-dark");
-    // }
   }
 }
 
@@ -71,7 +62,6 @@ const navSlider = function () {
 
   burger.addEventListener("click", function () {
     nav.classList.toggle("nav-active");
-    // burger.classList.toggle("nav-active");
     burger.classList.toggle("toggle");
   });
 };

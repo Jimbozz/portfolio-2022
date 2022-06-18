@@ -192,6 +192,15 @@ section {
   }
 }
 
+.max-xl {
+  max-width: 35vw;
+}
+@media only screen and (max-width: 600px) {
+  .max-xl {
+    max-width: 100vw;
+  }
+}
+
 .footer {
   display: flex;
   align-items: center;

@@ -54,6 +54,11 @@ ul {
   object-fit: contain;
   padding: 5rem;
 }
+.card-content__nologo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card-heading {
   padding: 1rem;
   margin: 0px;

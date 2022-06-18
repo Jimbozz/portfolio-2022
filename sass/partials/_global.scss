@@ -40,6 +40,12 @@ ul {
       object-fit: contain;
       padding: 5rem;
     }
+
+    &__nologo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &-heading {

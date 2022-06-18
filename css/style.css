@@ -106,9 +106,11 @@ ul {
   background-color: #fffefe;
   transition: all 0.3s ease;
   user-select: none;
+  width: 23px;
+  height: auto;
 }
 .toggle-style .toggle-label__icon {
-  width: 18px;
+  width: 100%;
   user-select: none;
   animation: wiggle 1s linear;
 }

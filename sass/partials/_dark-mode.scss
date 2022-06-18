@@ -23,9 +23,11 @@
     background-color: $light-bg;
     transition: all 0.3s ease;
     user-select: none;
+    width: 23px;
+    height: auto;
 
     &__icon {
-      width: 18px;
+      width: 100%;
       user-select: none;
       animation: wiggle 1s linear;
     }

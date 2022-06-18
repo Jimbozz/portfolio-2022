@@ -402,6 +402,9 @@ header .nav .burger {
   display: flex;
   flex-direction: column;
 }
+.projects-heading {
+  margin-bottom: 2rem;
+}
 
 .about {
   display: grid;
@@ -511,12 +514,9 @@ header .nav .burger {
   list-style-type: disc;
 }
 
-.projects h1,
-.projects h2 {
-  margin: 0px;
-}
 .projects p {
   margin-bottom: 2rem;
+  margin-top: 0px;
 }
 
 .project-images {

@@ -33,6 +33,10 @@
 .projects {
   display: flex;
   flex-direction: column;
+
+  &-heading {
+    margin-bottom: 2rem;
+  }
 }
 
 //About section

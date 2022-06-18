@@ -39,7 +39,11 @@ export default function createMenu() {
               />
             </label>
           </div>
-          <a href="" class="btn btn-nav">Resume</a>
+          <a
+          class="btn btn-nav"
+          href="/assets/James-Badenhorst-CV-2022.pdf"
+          download
+          >Resume</a>
         </ul>
         <div class="burger" aria-label="menu">
           <div class="line1 burger-lines"></div>

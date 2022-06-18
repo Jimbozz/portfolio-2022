@@ -8,6 +8,13 @@ ul {
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+  &:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
 //card styles
 
 .card-container {

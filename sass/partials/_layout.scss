@@ -9,13 +9,6 @@
   // overflow: scroll;
 }
 
-html {
-  scroll-behavior: smooth;
-  &:focus-within {
-    scroll-behavior: smooth;
-  }
-}
-
 html,
 body {
   height: 100vh;

@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61.013" height="61.092" viewBox="0 0 61.013 61.092"><defs><clipPath id="a"><rect width="61.013" height="61.092" transform="translate(0 0)" fill="none"/></clipPath></defs><g transform="translate(0 0)"><g clip-path="url(#a)"><path d="M30.493,2.5H2.5A28.044,28.044,0,0,0,30.493,30.544Z" fill="none" stroke="#2d2f2b" stroke-miterlimit="10" stroke-width="5"/><path d="M30.493,30.544H2.5A28.044,28.044,0,0,0,30.493,58.588Z" fill="none" stroke="#2d2f2b" stroke-miterlimit="10" stroke-width="5"/><path d="M30.519,30.544H58.512A28.044,28.044,0,0,1,30.519,58.588Z" fill="none" stroke="#2d2f2b" stroke-miterlimit="10" stroke-width="5"/><path d="M30.519,2.5H58.512A28.044,28.044,0,0,1,30.519,30.544Z" fill="none" stroke="#2d2f2b" stroke-miterlimit="10" stroke-width="5"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60.9 61.2" style="enable-background:new 0 0 60.9 61.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000005266012691582667580000003973223829701794466_);}
+	.st1{fill:none;stroke:#2D2F2B;stroke-width:5;stroke-miterlimit:10;}
+</style>
+<g transform="translate(0 0)">
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="0" y="0.1" width="61" height="61.1"/>
+			</defs>
+			<clipPath id="SVGID_00000165915643466157675650000002981134822431495601_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_00000165915643466157675650000002981134822431495601_);">
+				<path class="st1" d="M30.5,2.6h-28c0,15.5,12.5,28,28,28V2.6z"/>
+				<path class="st1" d="M30.5,30.7h-28c0,15.5,12.5,28,28,28V30.7z"/>
+				<path class="st1" d="M30.5,30.7h28c0,15.5-12.5,28-28,28V30.7z"/>
+				<path class="st1" d="M30.5,2.6h28c0,15.5-12.5,28-28,28V2.6z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

@@ -260,12 +260,11 @@ a {
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
-  header {
-    top: 0;
-    z-index: 100;
-    position: sticky;
-  }
+header {
+  top: 0;
+  z-index: 100;
+  position: sticky;
+  background-color: var(--main-bg);
 }
 header .nav {
   display: flex;

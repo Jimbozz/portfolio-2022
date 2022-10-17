@@ -1,5 +1,28 @@
 //project specific styles layout
 
+.hero-wrapper-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+
+  .hero-logo-two {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_image {
+      width: 100%;
+      height: auto;
+    }
+
+    &_year {
+      color: $text-light;
+    }
+  }
+}
+
 .hero-wrapper {
   display: flex;
   justify-content: center;

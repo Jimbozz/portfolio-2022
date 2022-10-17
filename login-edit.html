@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="James Badenhorst is a front-end developer who likes to craft solid scalable frontend products with great user experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/79b47cefb0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>James | LOGIN,EDIT</title>
+  </head>
+  <body class="page light">
+    <header>
+      <nav class="nav"></nav>
+    </header>
+    <main>
+      <a href="javascript:history.back()" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i>Back
+      </a>
+      <div class="hero-wrapper-two">
+        <div class="hero-logo-two">
+          <img
+            class="hero-logo-two_image"
+            src="/assets/login-js-ma-three.png"
+            alt="cosmo logo"
+          />
+          <p class="hero-logo-two_year">2022</p>
+        </div>
+      </div>
+      <div class="technologies">
+        <ul>
+          <li>React</li>
+          <li>Bootstrap</li>
+          <li>Wordpress</li>
+        </ul>
+        <div>
+          <a href="https://github.com/Jimbozz/Wordpress-Login-Edit">
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+        </div>
+      </div>
+      <section class="project-overview max">
+        <h1>Overview</h1>
+        <p>
+          We had to create an API call to Wordpress and list all the pages in
+          our local version of WP. Then if the page was clicked on we would
+          direct the user to the "page/{id}"" route.
+        </p>
+        <p>
+          Next we created a login form. If the login was successful they would
+          be redirected to "/admin" where we would list all the pages. If a page
+          is clicked on they would be redirected to "/admin/edit/{id}" route
+          which would populate the form with the correct data. This would allow
+          the user to edit the "title" and "status" property of the page.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <small>Copyright &copy; 2022 James Badenhorst</small>
+      <div class="footer-icons">
+        <a href="https://github.com/Jimbozz">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jamesbadenhorst/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>

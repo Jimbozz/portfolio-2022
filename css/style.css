@@ -52,14 +52,13 @@ html:focus-within {
   top: -10px;
 }
 .card-content {
-  height: 16rem;
+  height: 15rem;
   width: auto;
 }
 .card-content__image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 5rem;
 }
 .card-content__nologo {
   display: flex;
@@ -67,28 +66,46 @@ html:focus-within {
   align-items: center;
 }
 .card-heading {
+  padding: 0px 1rem;
+}
+.card-text {
   padding: 1rem;
+  margin: 0px;
+}
+.card-text_tools {
+  display: flex;
+  gap: 1rem;
+  color: grey;
+  font-family: "roboto mono", monospace;
+  margin-bottom: 0.5rem;
+}
+.card-text_heading {
   margin: 0px;
 }
 
 .homeland {
   background-color: #f8e5db;
+  padding: 3rem;
 }
 
 .makers {
   background-color: #f2ecde;
+  padding: 3rem;
 }
 
 .white {
   background-color: #f6f6f6;
+  padding: 3rem;
 }
 
 .soles {
   background-color: black;
+  padding: 3rem;
 }
 
 .cosmo {
   background-color: #60e6b2;
+  padding: 3rem;
 }
 
 .toggle-style {
@@ -470,6 +487,26 @@ header .nav .burger {
 .contact-wrapper p {
   max-width: 500px;
   margin: 0 auto;
+}
+
+.hero-wrapper-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.hero-wrapper-two .hero-logo-two {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-wrapper-two .hero-logo-two_image {
+  width: 100%;
+  height: auto;
+}
+.hero-wrapper-two .hero-logo-two_year {
+  color: #d6d6d6;
 }
 
 .hero-wrapper {

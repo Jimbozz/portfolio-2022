@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="James Badenhorst is a front-end developer who likes to craft solid scalable frontend products with great user experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/79b47cefb0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>James | Harry potter website</title>
+  </head>
+  <body class="page light">
+    <header>
+      <nav class="nav"></nav>
+    </header>
+    <main>
+      <a href="javascript:history.back()" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i>Back
+      </a>
+      <div class="hero-wrapper-two">
+        <div class="hero-logo-two">
+          <img
+            class="hero-logo-two_image"
+            src="/assets/js-fw-ca.png"
+            alt="cosmo logo"
+          />
+          <p class="hero-logo-two_year">2022</p>
+        </div>
+      </div>
+      <div class="technologies">
+        <ul>
+          <li>React</li>
+          <li>Bootstrap</li>
+          <li>Next.js</li>
+          <li>Wordpress</li>
+        </ul>
+        <div>
+          <a href="https://github.com/Jimbozz/harry-potter-website">
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+        </div>
+      </div>
+      <section class="project-overview max">
+        <h1>Overview</h1>
+        <p>
+          Create a new Next.js app and use the JWT plugin for wordpress to
+          create an authentication login request.
+        </p>
+        <p>
+          Next we had to retrieve results from the API we used, in this case it
+          was the Harry Potter API. When the user clicked on the specific
+          character they would be directed to a character specific page.
+        </p>
+        <p>
+          We also had to create the login form with username and password
+          inputs. We had to make a request to the Wordpress JWT plugin and if
+          the login was successful we would redirect the user to the "Admin"
+          page.
+        </p>
+        <p>
+          Another option was for us to create a favorites button for each
+          character and if this was clicked it would toggle the result in/out of
+          the favorites array and display the results on a page called
+          favorites.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <small>Copyright &copy; 2022 James Badenhorst</small>
+      <div class="footer-icons">
+        <a href="https://github.com/Jimbozz">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jamesbadenhorst/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>

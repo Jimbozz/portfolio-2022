@@ -17,6 +17,7 @@ html {
 
 //card styles
 
+.projects-container,
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -72,6 +73,26 @@ html {
 
     &_heading {
       margin: 0px;
+    }
+
+    &_description {
+      margin-bottom: 0px;
+      height: 100px;
+    }
+
+    &_links {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+
+      &-icons {
+        display: flex;
+        gap: 1rem;
+      }
+
+      &-link {
+        color: $accent-color;
+      }
     }
   }
 }

@@ -32,6 +32,7 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+.projects-container,
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -81,6 +82,22 @@ html:focus-within {
 }
 .card-text_heading {
   margin: 0px;
+}
+.card-text_description {
+  margin-bottom: 0px;
+  height: 100px;
+}
+.card-text_links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card-text_links-icons {
+  display: flex;
+  gap: 1rem;
+}
+.card-text_links-link {
+  color: #35845c;
 }
 
 .homeland {
@@ -556,7 +573,7 @@ header .nav .burger {
   list-style-type: disc;
 }
 
-.projects p {
+.projects-description {
   margin-bottom: 2rem;
   margin-top: 0px;
 }
